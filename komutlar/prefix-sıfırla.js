@@ -5,13 +5,6 @@ module.exports.run = async (client, message, args) => {
   let kontrol = await db.fetch(`dil_${message.guild.id}`);
   let prefix = await db.fetch(`prefix_${message.guild.id}`);
   if (kontrol == "TR_tr") {
-    const DBL = require("dblapi.js");
-    const dbl = new DBL(
-      "",
-      client
-    );
-    dbl.hasVoted(message.author.id).then(voted => {
-      if (voted) {
         if (!prefix) {
           const embed = new Discord.RichEmbed()
             .setColor("BLACK")
@@ -36,8 +29,9 @@ module.exports.run = async (client, message, args) => {
           .setColor("BLACK");
         message.channel.send(embed);
       }
-    });
-  } else {
+    };
+/*
+   else {
     const DBL = require("dblapi.js");
     const dbl = new DBL(
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NTIzMjYzMzUyOTM2ODU3NiIsImJvdCI6dHJ1ZSwiaWF0IjoxNTgxMDA5ODg0fQ.ZrLr1fZZ6m6iBmD_66N4rqeQ9fmtrV7pnLoc8IfVe_c",
@@ -72,7 +66,7 @@ module.exports.run = async (client, message, args) => {
     });
   }
 };
-
+*/
 module.exports.conf = {
   enabled: true,
   guildOnly: true,
