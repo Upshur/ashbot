@@ -2,7 +2,16 @@ const Discord = require("discord.js");
 const db = require("quick.db");
 
 module.exports.run = async (client, message, args) => {
-  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "!";
+  let kontrol = await db.fetch(`dil_${message.guild.id}`);
+  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "g!";
+  if (kontrol == "TR_tr") {
+    const DBL = require("dblapi.js");
+    const dbl = new DBL(
+      "",
+      client
+    );
+    dbl.hasVoted(message.author.id).then(voted => {
+      if (voted) {
         let prefix = args.slice(0).join(" ");
         if (!prefix) {
           const embed = new Discord.RichEmbed()
