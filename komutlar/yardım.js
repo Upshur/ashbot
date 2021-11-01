@@ -32,7 +32,7 @@ module.exports.run = async (client, message, args) => {
 
       .addField(
         `Ban Koruma`,
-        `\`ban-koruma\`, \`ban-koruma-sıfırla\`, \`ban-limit\`, \`ban-limit-rol\`, \`ban-limit-sıfırla\`, \`ban-limit-rol-sıfırla\``
+        `\`ban-koruma\`, \`ban-koruma-sıfırla\`, \`ban-limit\`, \`ban\`, \`kick\`, \`ban-limit-rol\`, \`ban-limit-sıfırla\`, \`ban-limit-rol-sıfırla\``
       )
       .addField(
         `Yedekleme`,
