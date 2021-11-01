@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const db = require("quick.db");
 module.exports.run = async (bot, message, args) => {
   let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "d!";
-  if (!message.member.hasPermission("BAN_MEMBERS")) {
+  if (!message.member.hasPermission("KICK_MEMBERS")) {
     const embed = new Discord.MessageEmbed()
       .setDescription("**Ne yazık ki bu komutu kullanmaya yetkin yok.**")
       .setColor("BLACK");
@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
   if (!u) {
     return message.channel.send(
       new Discord.MessageEmbed()
-        .setDescription("Lütfen Sunucudan Banlanıcak Kişiyi Ktiketleyiniz!")
+        .setDescription("Lütfen atılacak kişiyi etiketleyiniz!")
         .setColor("BLACK")
         .setFooter(bot.user.username, bot.user.avatarURL)
     );
@@ -23,7 +23,7 @@ module.exports.run = async (bot, message, args) => {
 
   const codwaembed = new Discord.MessageEmbed()
     .setColor("BLACK")
-    .setDescription(` ${u} **Adlı şahsın sunucudan banlanmasını onaylıyor musunuz?**`)
+    .setDescription(` ${u} **Adlı şahsın sunucudan atılmasını onaylıyor musunuz?**`)
     .setFooter(bot.user.username, bot.user.avatarURL);
   message.channel.send(codwaembed).then(async function(sentEmbed) {
     const emojiArray = ["✅"];
@@ -37,10 +37,10 @@ module.exports.run = async (bot, message, args) => {
     reactions.on("collect", async function(reaction) {
       if (reaction.emoji.name === "✅") {
         message.channel.send(
-          ` **İşlem onaylandı!** ${u} **adlı şahıs sunucudan banlandı!**`
+          ` **İşlem onaylandı!** ${u} **adlı şahıs sunucudan atıldı!**`
         );
 
-        message.guild.member(u).ban();
+        message.guild.member(u).kick();
       }
     });
   });
@@ -55,7 +55,7 @@ module.exports.conf = {
 };
 
 module.exports.help = {
-  name: "ban",
+  name: "kick",
   description: "codwa & ottomancode",
-  usage: "ban"
+  usage: "kick"
 };
