@@ -1,11 +1,16 @@
-const dc = require('discord.js');
-exports.run = (client, message, args) => {
-//OTTOMAN CODE
- let ottoman = message.mentions.users.first() || message.author
- let ottomancode = new dc.MessageEmbed()
- .setImage(ottoman.avatarURL())
-  message.channel.send(ottomancode)
-  };
-exports.conf = { name: true, guildonly: false, aliases: [], permlevel: 0}
-//OTTOMAN CODE
-exports.help = { name: 'avatar'}
+const Discord = require('discord.js');
+
+exports.run = async (client, message, args) => {
+let user = message.mentions.users.first() || message.author;
+message.channel.send(new Discord.MessageAttachment(user.avatarURL({dynamic: true})));
+};
+exports.conf = {
+  enabled: true,
+  guildOnly: true,
+  aliases: ['avatar'],
+  permLevel: 0
+}
+
+exports.help = {
+  name: 'av'
+};
