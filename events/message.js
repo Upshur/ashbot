@@ -33,7 +33,6 @@ module.exports = async message => {
   let params = message.content.split(' ').slice(1);
   let perms = client.elevation(message);
   let cmd;
-   
   if (client.commands.has(command)) {
     cmd = client.commands.get(command);
   } else if (client.aliases.has(command)) {
@@ -100,6 +99,40 @@ module.exports = async message => {
   }
 
 };
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   if (db.has(`karalist_${message.author.id}`) === true) {
     let embed = new Discord.RichEmbed()
     .setColor("RANDOM")
@@ -120,4 +153,3 @@ module.exports = async message => {
   }
   
 };
-
