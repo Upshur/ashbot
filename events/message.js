@@ -133,6 +133,43 @@ module.exports = async message => {
   
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   if (db.has(`karalist_${message.author.id}`) === true) {
     let embed = new Discord.RichEmbed()
     .setColor("RANDOM")
