@@ -17,12 +17,7 @@ module.exports = async bot => {
     "a.help | a.invite | a.prefix",
     "a.yardım | a.invite | a.prefix",
     //`Shard: ${shardi}/${bot.shard.count}`,
-    `${bot.guilds.size.toLocaleString()} Guilds! ${bot.guilds
-      .reduce((a, b) => a + b.memberCount, 0)
-      .toLocaleString()} Members!`
-    `${bot.guilds.size.toLocaleString()} sunucu, ${bot.guilds
-      .reduce((a, b) => a + b.memberCount, 0)
-      .toLocaleString()} kullanıcı!`
+    
   ];
 
   setInterval(async () => {
