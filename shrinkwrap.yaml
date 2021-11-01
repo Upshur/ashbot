@@ -2,7 +2,6 @@ dependencies:
   chalk: 3.0.0
   dateformat: 3.0.3
   dblapi.js: 2.3.1
-  discord-buttons: 4.0.0
   discord.js: 11.6.3
   express: 4.17.1
   fs: 0.0.2
@@ -393,10 +392,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
-  /discord-buttons/4.0.0:
-    dev: false
-    resolution:
-      integrity: sha512-E/eQX4Ktj7nKwNDsTfCezBNCu73FtPWJfQcpKohfl0jct/ucMUO+7uhL2MhGsZr4SCfojk7OzccAznuntB564w==
   /discord.js/11.6.3:
     dependencies:
       long: 4.0.0
@@ -1387,7 +1382,6 @@ specifiers:
   chalk: ^3.0.0
   dateformat: ^3.0.3
   dblapi.js: ^2.3.0
-  discord-buttons: ^4.0.0
   discord.js: ^11.5.2
   express: ^4.17.1
   fs: ^0.0.2
