@@ -38,7 +38,9 @@ module.exports = async message => {
   } else if (client.aliases.has(command)) {
     cmd = client.commands.get(client.aliases.get(command));
   }
-  if (cmd) {
+ ;
+    
+    if (cmd) {
    if (cmd.conf.enabled === false) {
       if (!ayarlar.sahip.includes(message.author.id) && !ayarlar.sahip.includes(message.author.id)) {
         const embed = new Discord.RichEmbed()
