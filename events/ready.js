@@ -9,10 +9,9 @@ module.exports = async bot => {
   //bot.shard.fetchClientValues("users.size").then(async results2 => {
 //  let shardi = bot.shard.id + 1;
   var oyun = [
-    "Wishing you plenty of tea ...",
-    "Bol çay içme dileğiyle...",
+    "Âsh  #YETKİLİ ALIM ♥Yusuf",
+    "yapımcım Romeo",
     "En iyi sistemle güvenlik sistemleri!",
-    "Faster Security System!",
     "Version: v0.5",
     "a.help | a.invite | a.prefix",
     "a.yardım | a.invite | a.prefix",
