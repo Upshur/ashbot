@@ -14,8 +14,8 @@ module.exports = async bot => {
     "En iyi sistemle güvenlik sistemleri!",
     "Faster Security System!",
     "Version: v0.5",
-    "c+help | c+invite | c+prefix",
-    "c+yardım | c+invite | c+prefix",
+    "a.help | a.invite | a.prefix",
+    "a.yardım | a.invite | a.prefix",
     //`Shard: ${shardi}/${bot.shard.count}`,
     `${bot.guilds.size.toLocaleString()} Guilds! ${bot.guilds
       .reduce((a, b) => a + b.memberCount, 0)
