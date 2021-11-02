@@ -10,7 +10,7 @@ module.exports = async bot => {
 //  let shardi = bot.shard.id + 1;
   var oyun = [
     "Âsh  #YETKİLİ ALIM ❤️Yusuf",
-    "Yapımcım Romeo",
+    "Yapımcım james bond",
     "Version: v0.5",
     "a.help | a.invite | a.prefix",
     "a.yardım | a.invite | a.prefix",
