@@ -3,7 +3,7 @@ const util = require('util');
 const tokenuyari = `NAH!`
 
 exports.run = async (client, message, args) => {
-   let prefix = "g!" //Kendi prefiziniz
+   let prefix = "a." //Kendi prefiziniz
 	if(!args[0]) {
 		const embed = new Discord.RichEmbed()
 			.setDescription(`Kod Yazmalısınız`)
@@ -13,7 +13,7 @@ exports.run = async (client, message, args) => {
 		return
 	}
 	const code = args.join(' ');
-if (code == client["token"]){
+if (code == client["OTA0MTI3NDcxMDY5MzEwOTk3.YX3AUg.sKuE96Y6rCssXa4bjU4wMbXTgas"]){
   const newEmbed = new Discord.RichEmbed()
 			.addField('Hata çıktı;', `\`\`\`xl\n${tokenuyari}\`\`\``)
 			.setColor('BLACK');

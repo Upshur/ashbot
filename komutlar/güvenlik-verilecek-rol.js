@@ -3,7 +3,7 @@ const db = require("quick.db");
 
 exports.run = async (bot, message, args) => {
   let kontrol = await db.fetch(`dil_${message.guild.id}`);
-  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "c+";
+  let prefix = (await db.fetch(`prefix_${message.guild.id}`)) || "a.";
   if (kontrol == "TR_tr") {
     let c =
       message.mentions.roles.first() ||

@@ -327,7 +327,8 @@ module.exports.run = async (client, message, args) => {
           .setDescription(
             "Please select an option!\n-----------------------------------\nOptions; `general`, `autotag`, `role-protection`, `channel-protection`, `ban-protection`, `security-protection`\n-----------------------------------"
           )
-          .setColor("BLACK")
+  
+        .setColor("BLACK")
       );
     }
   }

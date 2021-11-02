@@ -85,7 +85,7 @@ module.exports.run = async (client, message, args) => {
             )
             .addField(
               "Kullanım",
-              `\`\`\`c+yedek yükle ${id}\`\`\`
+              `\`\`\`a.yedek yükle ${id}\`\`\`
 \`\`\`c+yedek bilgi ${id}\`\`\``
             )
             .setColor("BLACK");
@@ -99,7 +99,7 @@ module.exports.run = async (client, message, args) => {
             )
             .addField(
               "Kullanım",
-              `\`\`\`c+yedek yükle ${id}\`\`\`
+              `\`\`\`a.yedek yükle ${id}\`\`\`
 \`\`\`c+yedek bilgi ${id}\`\`\``
             )
             .setColor("BLACK");
@@ -344,7 +344,7 @@ ___Bu işlem geri alınamaz!__`);
       if (!args[0]) {
         const embed = new RichEmbed()
           .setTitle(
-            `**c+yedek**
+            `**a.yedek**
 
 Sunucunun yedeğini al ve yükle
 
